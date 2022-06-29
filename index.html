@@ -2,7 +2,9 @@
 <my-tag></my-tag>
 <iframe src="frame.html">
 </iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yYbFlHQWe0g?controls=0" title="YouTube video player"
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen></iframe>
 <!-- <my-tag/> は外部ファイルで指定 -->
 <script src="my-tag.riot" type="riot"></script>
 
@@ -11,9 +13,9 @@
 
 <!-- コンパイルとマウント -->
 <script>
-(async function main() {
-  await riot.compile()
+  (async function main() {
+    await riot.compile()
 
-  riot.mount('my-tag')
-}())
+    riot.mount('my-tag')
+  }())
 </script>
