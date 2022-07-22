@@ -1,5 +1,5 @@
 <!-- マウント位置 -->
-<my-tag></my-tag>
+<operative-movie src="rawmovies/fourseasons.mp4"/></my-tag>
 <iframe src="frame.html">
 </iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yYbFlHQWe0g?controls=0" title="YouTube video player"
@@ -7,6 +7,7 @@
   allowfullscreen></iframe>
 <!-- <my-tag/> は外部ファイルで指定 -->
 <script src="my-tag.riot" type="riot"></script>
+
 
 <!-- riot.js とコンパイラを含める -->
 <script src="https://unpkg.com/riot@4/riot+compiler.min.js"></script>
@@ -16,6 +17,6 @@
   (async function main() {
     await riot.compile()
 
-    riot.mount('my-tag')
+    riot.mount('operative-movie')
   }())
 </script>
